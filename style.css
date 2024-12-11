@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background: hsl(0, 0%, 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    width: 320px;
+    height: 500px;
+    border-radius: 10px;
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    position: relative;
+}
+#stories{
+    height: 16%;
+    /* height: 80px; */
+    width: 100%;
+    border-bottom: 2px solid #dadada;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0px 10px;
+}
+#box::-webkit-scrollbar {
+    display: none;
+}
+#box {
+    width: 100%;
+    height: 80%;
+    padding: 0px 10px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: none;
+    flex-direction: column;
+}
+#box .boxlist{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    /* border: 1px solid #000; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.667);
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+#box .boxlist img{
+    overflow-y: none;
+    width: 100%;
+    height: 95%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+#stories::-webkit-scrollbar{
+    display: none;
+}
+
+#stories .story{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: #dadada;
+    margin-top: 5px;
+    border: 3px solid rgb(111, 174, 18);
+    overflow: hidden;
+    cursor: pointer;
+}
+#stories .story img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#full-scr{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    display: none;
+}
+#full-scr #name h2{
+    position: absolute;
+    top: 0px;
+    padding-top: 15px;
+    padding-left: 20px;
+    color: rgb(153, 153, 153);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#full-scr #image{
+    /* position: absolute;
+    top: 0px; */
+    height: 99%;
+    width: 100%;
+    /* background: rgb(106, 18, 18); */
+    background-size: cover;
+    background-position: center;
+}
+#progress{
+    height: 1%;
+}
+#grow{
+    width: 5%;
+    height: 100%;
+    background: #d0d0d0;
+    border-radius: 30px;
+}
+#like{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#like i{
+    cursor: pointer;
+}
+#like .true{
+    color: red !important;
+}
+#like .false{
+    color: black !important;
+}
